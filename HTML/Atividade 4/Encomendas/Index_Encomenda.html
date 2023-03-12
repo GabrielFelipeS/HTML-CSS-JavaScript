@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pães e Bolos</h1>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Index_Encomenda.html">Encomendar Bolo</a></li>
+        </ul>
+
+    <h2>Encomedar Bolo</h2>
+    <form action="" method="get">
+
+            <label for="name">Nome: <input id="name" type="text" placeholder="Informe o nome" size="35"  maxlength="35" autofocus required>     </label> 
+            <label for="DDD">DDD (<input id="DDD" type="text" placeholder="DDD"            size="2"   maxlength="2">)</label>
+            Telefone: <input type="text" placeholder="Telefone"       size="10"  maxlength="10">
+        <br><br>
+
+        <table BORDER>
+            <caption> Bolos</caption>
+            <tr>
+                <td><img src="../Imagens/Bolo01.png" alt="Bolo de Chocolate" width="200"></td>
+                <td><img src="../Imagens/Bolo02.png" alt="Bolo de Frutas"    width="200"></td>
+                <td><img src="../Imagens/Bolo03.png" alt="Bolo Misto"        width="200"></td>
+            </tr>
+
+            <tr ALIGN="center">            
+                <td><b>Chocolate</b></td>
+                <td><b>Frutas</b></td>
+                <td><b>Misto</b></td>
+            </tr>
+        </table>
+        <br><br>
+
+        <select required>
+            <option value="" selected disabled>Escolha...</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Frutas">Frutas</option>
+            <option value="Misto">Misto</option>
+        </select>
+
+        Tipo: 
+        <label for="Simples"><input type="radio" name="Tipo" id="Simples"> Simples</label> 
+        <label for="Decorado"><input type="radio" name="Tipo" id="Decorado">Decorado</label>
+        <br><br>
+
+        <label for="tamanho">Tamanho: <input type="number" name="tamanho" id="tamanho" min="1" max="10"></label> kg
+        <label for="diet"><input type="checkbox" name="diet" id="diet"> Diet?</label>
+        <br><br>
+        
+        <label for="obs">
+            Observações:
+            <textarea name="Observações" id="obs" cols="80" rows="3" placeholder="Observações sobre o pedido."></textarea>
+        </label>
+        <br><br>
+        
+        <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
